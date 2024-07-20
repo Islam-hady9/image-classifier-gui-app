@@ -41,7 +41,7 @@ index = """
 <|{"img/logo.png"}|image|width=25vw|>
 
 <|{content}|file_selector|extensions=.png|>
-select an image from your file system
+select an image to classify
 
 <|{pred}|>
 
