@@ -18,7 +18,6 @@ class_names = {
 
 model = models.load_model(r"model\baseline.keras")
 
-
 def predict_image(model, path_to_img):
     img = Image.open(path_to_img)
     img = img.convert("RGB")
@@ -31,7 +30,6 @@ def predict_image(model, path_to_img):
     top_pred = class_names[np.argmax(probs)]
 
     return top_prob, top_pred
-
 
 content = ""
 img_path = "img/placeholder_image.png"
@@ -52,7 +50,6 @@ select an image from your file system
 <|{prob}|indicator|value={prob}|min=0|max=100|width=25vw|>
 >
 """
-
 
 def on_change(state, var_name, var_val):
     if var_name == "content":
